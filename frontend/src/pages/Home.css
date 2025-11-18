@@ -1,0 +1,363 @@
+/* Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  background: linear-gradient(135deg, var(--azul-primario) 0%, var(--azul-secundario) 100%);
+  color: var(--branco);
+  padding: 60px 20px;
+}
+
+.banner-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img {
+  max-width: 120%;
+  width: 120%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Quem Somos */
+.quem-somos-content {
+  text-align: center;
+}
+
+.quem-somos-content > p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: var(--cinza-medio);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quem-somos-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.quem-somos-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.quem-somos-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Nossa Equipe */
+.equipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.equipe-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.equipe-texto img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.equipe-texto h3 {
+  color: var(--azul-primario);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.equipe-texto p {
+  color: var(--cinza-medio);
+  line-height: 1.8;
+}
+
+.dentistas-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.dentista-card {
+  text-align: center;
+  padding: 20px;
+  background: var(--cinza-claro);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dentista-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dentista-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.dentista-card h4 {
+  color: var(--azul-primario);
+  margin-bottom: 5px;
+}
+
+.dentista-card p {
+  color: var(--cinza-medio);
+}
+
+/* Tratamentos */
+.tratamentos-section {
+  background-color: var(--cinza-claro);
+}
+
+.tratamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tratamento-card {
+  background: var(--branco);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tratamento-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
+}
+
+.tratamento-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tratamento-card h3 {
+  padding: 20px 20px 10px;
+  color: var(--azul-primario);
+}
+
+.tratamento-card p {
+  padding: 0 20px;
+  color: var(--cinza-medio);
+  margin-bottom: 20px;
+}
+
+.tratamento-card .btn {
+  margin: 0 20px 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Avaliações */
+.avaliacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.avaliacao-card {
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avaliacao-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.avaliacao-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avaliacao-header h4 {
+  color: var(--azul-primario);
+  margin-bottom: 5px;
+}
+
+.estrelas {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+.estrela-ativa {
+  color: #ffd700;
+}
+
+.avaliacao-card p {
+  color: var(--cinza-medio);
+  line-height: 1.6;
+}
+
+/* Mapa + Agendamento */
+.mapa-agendamento-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.mapa-container {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.agendamento-form-container {
+  background: var(--cinza-claro);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.agendamento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.agendamento-form input,
+.agendamento-form select,
+.agendamento-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.agendamento-form input:focus,
+.agendamento-form select:focus,
+.agendamento-form textarea:focus {
+  outline: none;
+  border-color: var(--azul-primario);
+}
+
+.submit-message {
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.submit-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.submit-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Modal de Tratamento */
+.tratamento-modal img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tratamento-modal h2 {
+  color: var(--azul-primario);
+  margin-bottom: 15px;
+}
+
+.descricao-completa {
+  color: var(--cinza-medio);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.etapas h3 {
+  color: var(--azul-primario);
+  margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .banner-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .equipe-texto {
+    grid-template-columns: 1fr;
+  }
+
+  .dentistas-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-agendamento-content {
+    grid-template-columns: 1fr;
+  }
+
+  .quem-somos-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .tratamentos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

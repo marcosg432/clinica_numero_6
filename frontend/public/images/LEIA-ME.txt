@@ -1,0 +1,64 @@
+========================================
+  PASTA DE IMAGENS
+========================================
+
+Esta é a pasta onde você deve colocar todas as imagens do site.
+
+ESTRUTURA DE PASTAS:
+--------------------
+
+📁 images/
+  ├── logo.png                    (Logo da clínica)
+  ├── banner-clinica.jpg          (Banner principal)
+  ├── clinica-1.jpg              (Imagens da clínica)
+  ├── clinica-2.jpg
+  ├── clinica-3.jpg
+  ├── equipe.jpg                  (Foto da equipe)
+  │
+  ├── tratamentos/                (Imagens dos tratamentos)
+  │   ├── clareamento.jpg
+  │   ├── implante.jpg
+  │   ├── ortodontia.jpg
+  │   └── ...
+  │
+  ├── avaliacoes/                 (Fotos de perfil dos clientes)
+  │   ├── cliente1.jpg
+  │   ├── cliente2.jpg
+  │   └── ...
+  │
+  ├── dentistas/                  (Fotos dos dentistas)
+  │   ├── dentista-1.jpg
+  │   ├── dentista-2.jpg
+  │   └── dentista-3.jpg
+  │
+  └── icons/                      (Ícones das redes sociais)
+      ├── facebook.png
+      ├── instagram.png
+      └── whatsapp.png
+
+========================================
+  COMO USAR
+========================================
+
+1. Coloque suas imagens nas pastas correspondentes
+2. Use os caminhos no código:
+   - /images/logo.png
+   - /images/tratamentos/clareamento.jpg
+   - /images/avaliacoes/cliente1.jpg
+   - etc.
+
+3. No painel admin, ao adicionar um tratamento:
+   - URL da Imagem: /images/tratamentos/nome-da-imagem.jpg
+
+========================================
+  IMPORTANTE
+========================================
+
+- As imagens devem estar nesta pasta (frontend/public/images/)
+- Use caminhos relativos começando com /images/...
+- Formatos suportados: .jpg, .png, .gif, .webp
+- Tamanho recomendado: 800x600px para tratamentos
+
+========================================
+
+
