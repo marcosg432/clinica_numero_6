@@ -90,9 +90,10 @@ export const AuthProvider = ({ children }) => {
       
       // Tratamento de erros mais específico
       if (error.code === 'ECONNREFUSED' || error.message.includes('Network Error')) {
+        const apiUrl = import.meta.env.VITE_API_URL || '/api';
         return {
           success: false,
-          message: 'Erro de conexão. Verifique se o backend está rodando na porta 3001.'
+          message: `Erro de conexão com a API (${apiUrl}). Verifique se o backend está acessível.`
         };
       }
       
